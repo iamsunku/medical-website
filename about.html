@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — MEKSTONE PHARMACEUTICALS LLP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    :root{
+      --primary:#005b96; --accent:#8cc63f;
+      --text:#22303b; --muted:#6d7a8a; --white:#fff; --light:#f4f9ff;
+      --container:6%;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Poppins,system-ui,Segoe UI,Arial;background:var(--white);color:var(--text);-webkit-font-smoothing:antialiased}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:14px var(--container);background:#fff;box-shadow:0 3px 14px rgba(0,0,0,0.06);position:sticky;top:0;z-index:120}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo img{width:64px;height:64px;object-fit:contain}
+    .logo-text{font-weight:700;color:var(--primary);font-size:1.15rem}
+    .nav-links{display:flex;gap:26px;list-style:none}
+    .nav-links a{text-decoration:none;color:var(--text);font-weight:600;transition:.18s}
+    .nav-links a:hover{color:var(--primary)}
+    .menu-toggle{display:none;font-size:1.6rem;cursor:pointer}
+    header.hero{height:38vh;background:linear-gradient(rgba(0,91,150,0.6),rgba(0,91,150,0.6)),url('Images/Mekstone Logo.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:28px}
+    header h1{font-size:2.2rem;letter-spacing:.2px}
+    .container{padding:56px var(--container);max-width:1200px;margin:0 auto}
+    .alt-section{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;margin-bottom:42px}
+    .alt-section .image{height:320px;border-radius:12px;background-size:cover;background-position:center;box-shadow:0 10px 30px rgba(2,20,40,0.08);opacity:0;transform:translateY(18px);animation:fadeUp .9s forwards}
+    .alt-section .content h2{color:var(--primary);font-size:1.6rem;margin-bottom:12px}
+    .alt-section .content p{color:var(--muted);line-height:1.6;margin-bottom:12px}
+    .values{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:18px}
+    .value-card{background:#fff;padding:22px;border-radius:12px;box-shadow:0 8px 20px rgba(2,20,40,0.06);text-align:center;opacity:0;transform:translateY(18px);animation:fadeUp .9s forwards}
+    .value-card i{font-size:2.4rem;color:var(--primary);margin-bottom:12px}
+/* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: var(--white);
+            padding: 60px 5% 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            border-bottom: 2px solid rgba(140, 198, 63, 0.3);
+            padding-bottom: 5px;
+        }
+        
+        .footer-col p {
+            color: #ddd;
+            font-size: 0.95rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-col ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent-color);
+        }
+        .footer-col a{
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #444;
+            padding-top: 20px;
+            font-size: 0.85rem;
+            color: #aaa;
+        }
+        
+    /* small screens */
+    @media(max-width:900px){
+      .nav-links{display:none;position:absolute;top:74px;left:0;width:100%;background:#fff;flex-direction:column;gap:18px;padding:18px 0;text-align:center}
+      .menu-toggle{display:block}
+      .alt-section{grid-template-columns:1fr;gap:18px}
+      .alt-section .image{height:220px}
+    }
+    @keyframes fadeUp{to{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <img src="Images/Mekstone Logo.jpg" alt="Mekstone Logo">
+      <div class="logo-text">MEKSTONE PHARMACEUTICALS LLP</div>
+    </div>
+
+    <i class="fas fa-bars menu-toggle"></i>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" style="color:var(--primary);font-weight:700">About Us</a></li>
+      <li><a href="product.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <h1>Our Science. Your Health.</h1>
+      <p style="opacity:.95;margin-top:8px">Research-driven formulations with quality and compliance at the core.</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- alternating sections (C style) -->
+    <section class="alt-section" aria-label="Our Story">
+      <div class="image" style="background-image:url('Images/p11.jpeg');animation-delay:.12s"></div>
+      <div class="content">
+        <h2>Our Story</h2>
+        <p>Founded with a mission to deliver quality medicines, MEKSTONE PHARMACEUTICALS LLP combines scientific rigor with manufacturing excellence. Our focus is on accessible health solutions across multiple therapeutic segments including general medicine, pediatrics, and nutraceuticals.</p>
+        <p>We partner with WHO–GMP certified manufacturers and perform strict QA at every step — from raw material testing to finished product release.</p>
+      </div>
+    </section>
+
+    <section class="alt-section" aria-label="Mission" style="grid-auto-flow:dense">
+      <div class="content">
+        <h2>Mission & Vision</h2>
+        <p>Mission: To develop affordable, safe, and effective medicines that improve patient outcomes.</p>
+        <p>Vision: To be a trusted partner for healthcare professionals by delivering consistent quality and innovation.</p>
+      </div>
+      <div class="image" style="background-image:url('Images/p12.jpeg');animation-delay:.18s"></div>
+    </section>
+
+    <section aria-label="Values">
+      <h2 style="color:var(--primary);margin-bottom:18px">Our Core Values</h2>
+      <div class="values">
+        <div class="value-card" style="animation-delay:.1s">
+          <i class="fas fa-check-circle"></i>
+          <h3 style="margin:8px 0">Quality First</h3>
+          <p style="color:var(--muted)">Strict in-process checks and third-party testing ensure product integrity.</p>
+        </div>
+        <div class="value-card" style="animation-delay:.16s">
+          <i class="fas fa-flask"></i>
+          <h3 style="margin:8px 0">R&D Focused</h3>
+          <p style="color:var(--muted)">Continuous improvement in formulations for better efficacy and tolerability.</p>
+        </div>
+        <div class="value-card" style="animation-delay:.22s">
+          <i class="fas fa-hand-holding-heart"></i>
+          <h3 style="margin:8px 0">Patient Safety</h3>
+          <p style="color:var(--muted)">Adherence to pharmacovigilance and safety monitoring standards.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+<footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>MEKSTONE PHARMACEUTICALS LLP</h4>
+                <p>Registered Office:<br>
+                Ground Floor 2nd Cross, A and B Block,<br>
+                Navilu Road,Kuvempunagar - 570023</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About Us.html">About Us</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">General Medicine</a></li>
+                    <li><a href="#">Gynaecology</a></li>
+                    <li><a href="#">Orthopedics</a></li>
+                    <li><a href="#">Pediatrics</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <p>Email:<a href="mailto:info@example.com">info@mekstonepharma.com</a>
+                <p>Phone: +91 98765 43210</p>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 MEKSTONE PHARMACEUTICALS LLP . All Rights Reserved. 
+        </div>
+    </footer>
+
+  <script>
+    // set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // mobile menu
+    const menu = document.querySelector('.menu-toggle');
+    const links = document.querySelector('.nav-links');
+    menu.addEventListener('click', ()=> links.style.display = links.style.display === 'flex' ? 'none' : 'flex');
+  </script>
+
+</body>
+</html>
